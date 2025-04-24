@@ -59,6 +59,10 @@ The Ramdon Forest Model has a RMSE value of 0.07 on the test dataset.
 
 Lastly, we conducted a simple test. We tried to predict the ERCOT day ahead electricity price for last Friday (04/18/2025). The actual price at noon was US$ 28.58, and the model price forecast was US$ 31.23. The difference is around 3 dollar, which is reasonable.
 
+### Jupiter File ###
+
+[Link] https://github.com/franzmart/Capstone-1---Initial-Report-and-EDA
+
 ### Contact and Further Information
 
 Franz Martinez
