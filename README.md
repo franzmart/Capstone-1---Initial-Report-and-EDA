@@ -50,12 +50,12 @@ Lastly, we set our target variable as Electricity Price and started our correlat
 
 Now that we have our autoregressive model with the significant predictors, we move on with the models. 
 
-**One ML algorithm**
-We prepared the train and test datasets from the electricity dataset. After that,  we calibrated a Ramdon Forest Model with GridSearchCV and applied to the train dataset. 
+**ML model**
+We prepared the train and test datasets from the electricity dataset. Since we are trying to forecast a price, the best selection is an autoregressive model. Therefore, we calibrated a Ramdon Forest Autoregressive Model with GridSearchCV and applied to the train dataset. 
 
 The optimal parameters for the model were: 'max_depth': None, 'min_samples_leaf': 2, and 'min_samples_split': 5. 
 
-The Ramdon Forest Model has a RMSE value of 0.07 on the test dataset.
+The Ramdon Forest Autoregressive Model has a RMSE value of 0.07 on the test dataset.
 
 Lastly, we conducted a simple test. We tried to predict the ERCOT day ahead electricity price for last Friday (04/18/2025). The actual price at noon was US$ 28.58, and the model price forecast was US$ 31.23. The difference is around 3 dollar, which is reasonable.
 
