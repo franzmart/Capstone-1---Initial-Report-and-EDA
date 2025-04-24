@@ -6,7 +6,7 @@
 
 **Project overview and goals:** The goal of this project is to develop a model to forecast the day ahead electricity price in Houston Texas. We will obtain the model data from Electric Reliability Council of Texas (ERCOT), which is a USA government agency accountable to conciliate the power demand and supply in Texas. Additionally, we will train and test three different machine learning models to forecast the day ahead electricity price, and evaluate the models based on Root-mean-square deviation (RMSE). Lastly, we will select the machine learning model with lower RMSE.
 
-**Exploratory Data Analysis**
+###Exploratory Data Analysis
 Note: ALL the diagrams are in the Jupyter file with similar comments.
 
 We obtained electricity price, electricity demand, wind and solar energy provision datasets for 2022, 2023, and 2024 years from ERCOT website, and filtered the data to retain information for Houston, Texas. All the datasets were consolidated in one single electricity dataset organized by dates and hours. 
@@ -50,7 +50,7 @@ Lastly, we set our target variable as Electricity Price and started our correlat
 
 Now that we have our autoregressive model with the significant predictors, we move on with the models. 
 
-**ML model**
+###ML model###
 We prepared the train and test datasets from the electricity dataset. Since we are trying to forecast a price, the best model selection is an autoregressive model. Therefore, we calibrated a Ramdon Forest Autoregressive Model with GridSearchCV and applied to the train dataset. We will measure his precion based on the RMSE.
 
 The optimal parameters for the model were: 'max_depth': None, 'min_samples_leaf': 2, and 'min_samples_split': 5. 
