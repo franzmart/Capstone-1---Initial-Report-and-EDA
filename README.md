@@ -51,7 +51,7 @@ Lastly, we set our target variable as Electricity Price and started our correlat
 Now that we have our autoregressive model with the significant predictors, we move on with the models. 
 
 **ML model**
-We prepared the train and test datasets from the electricity dataset. Since we are trying to forecast a price, the best selection is an autoregressive model. Therefore, we calibrated a Ramdon Forest Autoregressive Model with GridSearchCV and applied to the train dataset. 
+We prepared the train and test datasets from the electricity dataset. Since we are trying to forecast a price, the best model selection is an autoregressive model. Therefore, we calibrated a Ramdon Forest Autoregressive Model with GridSearchCV and applied to the train dataset. We will measure his precion based on the RMSE.
 
 The optimal parameters for the model were: 'max_depth': None, 'min_samples_leaf': 2, and 'min_samples_split': 5. 
 
